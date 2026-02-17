@@ -25,5 +25,6 @@ for _ in range(200):
     optimizer.zero_grad()
 
 
+
 score = (model(X_val).argmax(1) == y_val).sum()/len(y_val)*100
 print(f"{score:.0f}")
